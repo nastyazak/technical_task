@@ -1,0 +1,753 @@
+/*Шрифты*/
+/*Baron Neue*/
+@font-face {
+  font-family: 'Baron Neue';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Baron Neue'),
+	url('../fonts/BaronNeue/baronneue.woff2') format('woff2'),
+	url('../fonts/BaronNeue/baronneue.woff') format('woff'),
+	url('../fonts/BaronNeue/baronneue.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Baron Neue';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Baron Neue'),
+	url('../fonts/BaronNeue/baronneuebold.woff2') format('woff2'),
+	url('../fonts/BaronNeue/baronneuebold.woff') format('woff'),
+	url('../fonts/BaronNeue/baronneuebold.ttf') format('ttf');
+}
+
+/*Lato*/
+@font-face {
+  font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Lato'),
+	url('../fonts/Lato/latoregular.woff2') format('woff2'),
+	url('../fonts/Lato/latoregular.woff') format('woff'),
+	url('../fonts/Lato/latoregular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Lato'),
+	url('../fonts/Lato/latobold.woff2') format('woff2'),
+	url('../fonts/Lato/latobold.woff') format('woff'),
+	url('../fonts/Lato/latobold.ttf') format('ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.rectangle {
+	position: absolute;
+	width: 100%;
+	top: 249px;
+	height: 494px;
+	z-index: -1;
+	background-color: #F4F5F5;
+}
+
+/*Шапка*/
+.header {
+	padding: 80px 0 72px 120px;
+	display: flex;
+	justify-content: space-between;
+}
+
+h1 {
+	color: var(--gray-1, #333);
+	/* Header/Baron Neue_regular_36 */
+	font-family: Baron Neue;
+	font-size: 36px;
+	line-height: 122.222%;
+	font-weight: 400;
+}
+
+.title_header {
+	width: 527px;
+	margin-bottom: 130px;
+}
+
+.moscow {
+	display: none;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.parameters {
+	width: 193px;
+	margin-right: 60px;
+	margin-top: 10px;
+}
+
+.apartments, .parking {
+	margin-bottom: 40px;
+}
+
+.time {
+	margin-bottom: 32px;
+}
+
+.more {
+	display: none;
+}
+
+.main {
+	color: var(--color-neutral-black, #303030);
+	/* Text/Lato_30 */
+	font-family: Lato;
+	font-size: 30px;
+	line-height: 80%;
+	font-weight: 700;
+	margin-bottom: 2px;
+}
+
+.units {
+	font-size: 16px;
+}
+
+sup {
+	font-size: 7px;
+	font-weight: 900;
+	vertical-align: 1.1em;
+}
+
+.description {
+	color: var(--color-neutral-dark-gray, #777);
+	/* Text/Lato_14 */
+	font-family: Lato, sans-serif;
+	font-size: 14px;
+	line-height: 185.714%;
+	font-weight: 400;
+}
+
+.text {
+	color: var(--color-neutral-black, #303030);
+	/* Text/Lato_16 */
+	font-family: Lato, sans-serif;
+	font-size: 16px;
+	line-height: 150%;
+	font-weight: 400;
+}
+
+.text_header {
+	width: 319px;
+	margin-right: 133px;
+}
+
+.pictures {
+	float: right;
+}
+
+.big {
+	margin-bottom: 30px;
+}
+
+.pink {
+	float: left;
+	margin-right: 31px;
+}
+
+.picture1, .picture2 {
+	color: var(--color-neutral-white, #FFF);
+	text-align: center;
+	font-family: Lato;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 125%;
+}
+
+.picture1 {
+	position: absolute;
+	top: 707px;
+	right: 408px;
+	left: 850px;
+	width: 182px;
+}
+
+.picture2 {
+	position: absolute;
+	top: 717px;
+	right: 154px;
+	left: 1121px;
+	width: 165px;
+}
+
+/*Блок с картой*/
+.navigation {
+	padding: 80px 120px;
+	display: flex;
+}
+
+.inf {
+	width: 282px;
+}
+
+.title_navigation {
+	margin-bottom: 45px;
+	line-height: 20px;
+}
+
+.categories {
+	margin-right: 91px;
+}
+
+li {
+	list-style: none;
+	margin-bottom: 12px;
+}
+
+.link {
+	border-radius: 20px;
+	border: 1px solid var(--color-primery-purple, rgba(199, 151, 145, 0.30000001192092896));
+	padding: 8px 20px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--color-neutral-black, #303030);
+	/* Text/Lato_11 */
+	font-family: Lato, sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 327.273%;
+}
+
+.link:hover {
+	background-color: var(--color-primery-purple, rgba(199, 151, 145, 0.30000001192092896));
+}
+
+.count {
+	color: var(--color-primery-bardo, #7A1B1B);
+	font-weight: 700;
+	line-height: 236.364%;
+}
+
+/*Карта*/
+.map {
+	position: relative;
+}
+
+.map svg {
+	position: absolute;
+	top: -2px;
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	display: none;
+}
+
+.google_map {
+	display: none;
+}
+
+.circle {
+	fill: none;
+	cursor: pointer;
+	pointer-events: all;
+}
+
+/*Подвал*/
+.footer {
+	padding: 80px 0;
+}
+
+.headlines {
+	margin-left: 120px;
+	margin-bottom: 40px;
+}
+
+.title_footer {
+	color: #08131F;
+}
+
+h2 {
+	color: #08131F;
+	/* Header/Baron Neue_regular_22 */
+	font-family: Baron Neue;
+	font-size: 22px;
+	line-height: 136.364%;
+	font-weight: 400;
+}
+
+/*Слайдер*/
+.slider {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 124px;
+	position: relative;
+}
+
+.slick-slider{
+	min-width: 0;
+}
+
+/*Ограничивающая оболочка*/
+.slick-list {
+	overflow: hidden;
+}
+
+/*Лента слайдов*/
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+
+/*Стрелки*/
+.slider .slick-arrow{
+	position: absolute;
+	font-size: 0;
+	width: 15px;
+	height: 23px;
+	margin: -100px 175px 0px 1150px;
+}
+
+.slick-arrow.slick-prev{
+	left: -20px;
+	background: url('../img/L.svg') 0 0 / 100% no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+.slick-arrow.slick-next{
+	left: 35px;
+	background: url('../img/R.svg') 0 0 / 100% no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+.slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+
+.slider__item img{
+	max-width: 100%;
+}
+
+.card01 {
+	width: 294px;
+	margin-right: 112px;
+}
+
+.card01 .text_card {
+	width: 285px;
+}
+
+.card02 {
+	width: 303px;
+	margin-right: 102px;
+}
+
+.card02 .text_card {
+	width: 291px;
+}
+
+.card03 {
+	width: 290px;
+	margin-right: 99px;
+}
+
+.card03 .text_card {
+	width: 281px;
+}
+
+.card04 {
+	width: 300px;
+}
+
+.card04 .text_card {
+	margin-bottom: 49px;
+}
+
+.number {
+	color: var(--color-primery-bardo, #7A1B1B);
+	font-family: Baron Neue;
+	font-size: 100px;
+	font-weight: 700;
+	opacity: 0.10000000149011612;
+	height: 75px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-left: -7px;
+}
+
+.text_card {
+	color: var(--gray-1, #333);
+	margin: 16px 0 25px;
+}
+
+.function {
+	color: var(--color-primery-bardo, #7A1B1B);
+	/* Text/Lato_16_bold */
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 150%;
+	text-decoration: none;
+}
+
+.function:hover {
+	opacity: 0.4;
+}
+
+/*Адаптивность*/
+/* 768px - 1400px */
+@media screen and (max-width: 1400px) {
+	.rectangle {
+		top: 221px;
+		height: 1121px; /*1121*/
+	}	
+
+/*Шапка*/
+	.header {
+		padding: 60px 0 42px;
+		display: block;
+	}
+
+	.title_header {
+		width: 559px;
+		margin: -10px 172px 110px 37px;
+	}
+
+	.moscow {
+		display: inline-block;
+	}
+
+	.parameters, .text_header {
+		margin-top: -10px;
+	}
+
+	.parameters {
+		width: 179px;
+		margin-left: 38px;
+		margin-right: 117px;
+	}
+
+	.time {
+		margin-bottom: 70px;
+	}	
+
+	.area {
+		display: none;
+		margin-bottom: 70px;
+		margin-top: -38px;
+	}
+
+	.more {
+		display: block;
+		color: var(--color-primery-bardo, #7A1B1B);
+		text-align: center;
+		/* Header/Baron Neue_regular_18 */
+		font-family: Baron Neue;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		text-decoration: none;
+	}
+
+	.more:hover::after {
+	  content: "";
+	  display: block;
+	  width: 100%;
+	  height: 2px;
+	  background-color: var(--color-primery-bardo, #7A1B1B);
+	  margin-top: 3px;
+	}
+
+	.more2 {
+		display: none;
+	}
+
+	.text_header {
+		margin-right: 115px;
+	}
+
+	.pictures {
+		float: none;
+		margin-top: 60px;
+		margin-left: 39px;
+	}
+
+	.picture1 {
+		position: absolute;
+		top: 1306px;
+		right: 546px;
+		left: 93px;
+		width: 129px;
+	}
+
+	.picture2 {
+		position: absolute;
+		top: 1316px;
+		right: 280px;
+		left: 358px;
+		width: 130px;
+	}
+
+	.big img{
+		width: 688px;
+		height: 478px;
+	}
+
+	.pink img, .gray img{
+		width: 236px;
+	}
+
+/*Блок с картой*/
+	.navigation {
+		padding: 60px 40px 60px 41px;
+		display: inline-block;
+	}
+
+	.inf {
+		width: 600px;
+	}
+
+	.title_navigation {
+		margin-bottom: 30px;
+	}
+
+	.categories {
+	  margin-bottom: 30px;
+	  margin-right: 0;
+	}
+
+	.categories li {
+	  display: inline-block;
+	  margin-right: 7px;
+	  margin-bottom: 7px;
+	}
+
+	.categories a {
+		word-wrap: break-word;
+	}
+
+/*Карта*/
+	.map {
+		display: none;
+	}
+
+	.google_map {
+		display: block;
+		width: 100%;
+	}
+
+/*Подвал*/
+	.footer {
+		padding: 60px 0 60px 40px;
+	}
+
+	.headlines {
+		margin-left: 0;
+		margin-bottom: 105px;
+	}
+
+/*Слайдер*/
+	.slider {
+		margin-left: 0;
+	}
+
+	.slider .slick-arrow{
+		width: 14px;
+		margin: -45px 0 0 645px;
+	}
+
+	.slick-arrow.slick-prev{
+		left: -20px;
+	}
+
+	.slick-arrow.slick-next{
+		left: 35px;
+	}
+
+	.card01 {
+		margin-right: 39px;
+	}
+
+	.card02 {
+		margin-right: 36px;
+	}
+}
+
+/* 375px - 767px */
+@media screen and (max-width: 767px) {
+	.rectangle {
+		top: 280px;
+		height: 1045px;
+	}
+
+/*Шапка*/
+	.header {
+		padding: 40px 0;
+	}
+
+	.title_header {
+		font-size: 32px;
+		width: 363px;
+		margin: 0 0 80px 12px;
+	}
+
+	.content {
+		display: block;
+	}
+
+	.time, .parameters, .text_header, .area, .pictures {
+		margin: 0;
+	}
+
+	.parameters {
+		margin-left: 11px;
+		margin-bottom: 35px;
+		display: flex;
+		flex-wrap: wrap;
+		width: 335px;
+	}
+
+	.block {
+		flex-basis: 50%;
+	}
+
+	.apartments, .parking {
+		margin-bottom: 30px;
+	}
+
+	.main {
+		font-size: 28px;
+		margin-bottom: 6px;
+	}
+
+	.parking .main {
+		margin-bottom: 11px;
+	}
+
+	.description {
+		margin-left: 3px;
+	}
+	
+	.indent {
+		margin-left: -1px;
+	}
+
+	.text_header {
+		width: 347px;
+		margin-left: 14px;
+		margin-bottom: 0;
+	}
+
+	.more {
+		display: none;
+	}
+
+	.more2 {
+		display: block;
+		text-align: left;
+		margin-left: 14px;
+		margin-top: 45px;
+		margin-bottom: 40px;
+	}
+
+	.more2:hover::after {
+	  width: 47%;
+	}
+
+	.pictures {
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+	.picture1 {
+		position: absolute;
+		top: 1311px;
+		right: 213px;
+		left: 32px;
+		width: 130px;
+	}
+
+	.picture2 {
+		position: absolute;
+		top: 1309px;
+		right: 43px;
+		left: 223px;
+		width: 109px;
+	}
+
+	.big {
+		margin-bottom: 14px;
+	}
+
+	.big img{
+		width: 347px;
+		height: 337px;
+		margin-left: 14px;
+	}
+
+	.pink {
+		margin-right: 0;
+	}
+
+	.pink img{
+		width: 168px;
+		height: 180px;
+		margin-left: 13px;
+	}
+
+	.gray img {
+		width: 166px;
+		height: 180px;
+		margin-left: 14px;
+	}
+
+/*Блок с картой*/
+	.navigation {
+		padding: 40px 0 40px 0px;
+	}
+
+	.inf {
+		width: 100%;
+	}
+
+	.title_navigation {
+		margin-bottom: 35px;
+		margin-left: 12px;
+	}
+
+	.categories {
+		margin-left: 14px;
+	}
+
+	.categories li {
+	  margin-right: 7px;
+	  margin-bottom: 7px;
+	}
+
+/*Подвал*/
+	.footer {
+		padding: 0 0 50px 14px;
+	}
+
+	.headlines {
+		margin-bottom: 50px;
+	}	
+
+  .slider .slick-prev {
+    display: none;
+  }
+}
